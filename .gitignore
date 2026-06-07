@@ -1,0 +1,27 @@
+# Ключ шифрования паролей — НИКОГДА не коммитить
+.bench_key
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Логи и временные файлы
+logs/*.log
+logs/*.log.*
+uploads/*
+backups/*
+downloads/*
+
+# IDE
+.venv/
+venv/
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,7 @@
+# Bench Manager v3.0 — зависимости
+PyQt5>=5.15.0
+paramiko>=2.11.0
+cryptography>=41.0.0
+pyyaml>=6.0
+psutil>=5.9.0
+scp>=0.14.0
