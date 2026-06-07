@@ -13,10 +13,15 @@ build/
 *.spec
 
 # Логи и временные файлы
-logs/*.log
-logs/*.log.*
+logs/*
+!logs/.gitkeep
+
 uploads/*
+!uploads/.gitkeep
+
 backups/*
+!backups/.gitkeep
+
 downloads/*
 
 # IDE
