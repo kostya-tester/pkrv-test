@@ -64,8 +64,7 @@ jobs:
       - name: Get version
         id: version
         shell: cmd
-        run: |
-          echo version=%GITHUB_REF_NAME% >> %GITHUB_OUTPUT%
+        run: echo version=%GITHUB_REF_NAME% >> %GITHUB_OUTPUT%
 
       - name: Pack ZIP
         shell: cmd
@@ -85,7 +84,7 @@ jobs:
           files: BenchManager-windows-${{ steps.version.outputs.version }}.zip
           generate_release_notes: true
 
-      - name: Upload artifact (для ручного запуска)
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: BenchManager-Windows
